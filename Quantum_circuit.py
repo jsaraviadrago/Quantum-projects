@@ -1,6 +1,7 @@
 from qiskit import QuantumCircuit, transpile
 from qiskit_aer import AerSimulator
 from qiskit.visualization import plot_histogram
+import matplotlib.pyplot as plt
 
 # Use Aer's AerSimulator
 simulator = AerSimulator()
@@ -32,7 +33,9 @@ counts = result.get_counts(compiled_circuit)
 print("\nTotal count for 00 and 11 are:", counts)
 
 # Draw the circuit
-circuit.draw()
+circuit.draw(output='mpl')
+#plt.show()
 
 # Plot a histogram
 plot_histogram(counts)
+#plt.show()
