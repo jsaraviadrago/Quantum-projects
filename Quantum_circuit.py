@@ -38,4 +38,4 @@ circuit.draw(output='mpl')
 
 # Plot a histogram
 plot_histogram(counts)
-#plt.show()
+plt.show()
