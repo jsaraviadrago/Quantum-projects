@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 simulator = AerSimulator()
 
 # Create a Quantum Circuit acting on the q register
-circuit = QuantumCircuit(2, 2)
+circuit = QuantumCircuit(4, 4)
 
 # Add a H gate on qubit 0
 circuit.h(0)
